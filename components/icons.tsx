@@ -257,7 +257,7 @@ export const GolangIcon = ({
   <svg
     xmlns="http://www.w3.org/2000/svg"
     height={size || height}
-    viewBox="0 0 45 50"
+    viewBox="0 0 55 50"
     width={size || width}
     {...props}
   >
