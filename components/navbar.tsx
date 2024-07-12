@@ -1,3 +1,4 @@
+'use client'
 import {
   Navbar as NextUINavbar,
   NavbarContent,
@@ -82,7 +83,10 @@ export const Navbar = () => {
             <NavbarMenuItem key={`${item}-${index}`}>
               <Link
                 color="foreground"
-                href={item.href}
+                onClick={() => {
+                  location.replace(location.origin + "/" + item.href)
+                  location.reload()
+                }}
                 size="lg"
               >
                 {item.label}

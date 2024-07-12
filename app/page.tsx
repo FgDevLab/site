@@ -88,22 +88,12 @@ export default function Home() {
     if (isInvalid.name || isInvalid.email || isInvalid.description) return
     setLoading(true)
     try {
-      await axios({
-        method: 'POST',
-        url: 'https://api.airtable.com/v0/appLhDp7afIUVmIcr/tblg5Jlu9I58iVpnI',
-        headers: {
-          "Authorization": "Bearer patIxBGmbIJsF1Xuo.fedc77eac09d163dcf80042ea99a5c56e8aa121d856eb9daa067e4ce5f93c79d",
-          "Scope": "data.records:write",
-          "Content-Type": "application/json" 
-        },
-        data: {
-          fields: {
-            Name: name,
-            Email: email,
-            Description: description
-          }
-        }
-      })
+      const data = new FormData()
+      data.append("name", name)
+      data.append("email", email)
+      data.append("message", description)
+      data.append("access_key", "b21068f6-8e0a-46b5-b10e-78caf3342d0d")
+      await axios.post("https://api.web3forms.com/submit", data)
       window.location.reload()
     } catch (error) {
     } finally {
@@ -123,7 +113,7 @@ export default function Home() {
           <span className="md:text-base text-sm max-w-xs md:max-w-2xl">Make the best and useful tools based on your needs. We deliver high-quality software solution for <span className="underline underline-offset-4 cursor-pointer">various industrial sectors </span>over years.</span>
           <br />
           <br />
-          <div className="flex justify-center items-center flex-row gap-3">
+          <div id="skills"  className="flex justify-center items-center flex-row gap-3">
             <a href="#contact" className="cursor-pointer px-3 font-medium flex flex-row items-center justify-center py-1.5 rounded-xl text-sm border-2 border-[#432f80] bg-gradient-to-b from-[#110d1e] to-[#432f80]">
               Get Free Talk
               <ArrowRightIcon className="ml-2" />
@@ -131,8 +121,8 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="flex flex-col items-center gap-16 justify-start">
-        <span className="max-w-xs md:max-w-5xl text-base text-center">Solving problem with various technologies for all needs.</span>
+      <section  className="flex flex-col items-center gap-16 justify-start">
+        <span  className="max-w-xs md:max-w-5xl text-base text-center">Solving problem with various technologies for all needs.</span>
         <div className="w-full max-w-xs md:max-w-5xl grid grid-cols-2 md:grid-cols-5 gap-12">
           {
             skills.map((item) => (
