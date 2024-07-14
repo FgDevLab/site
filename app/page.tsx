@@ -1,5 +1,5 @@
 'use client';
-import { ApplicationIcon, BrainIcon, DartIcon, WordpressIcon, GolangIcon, JavascriptIcon, PythonIcon, ArrowRightIcon, WpIcon } from "@/components/icons";
+import { ApplicationIcon, BrainIcon, DartIcon, WordpressIcon, GolangIcon, JavascriptIcon, PythonIcon, ArrowRightIcon, WpIcon, PhpIcon, JavaIcon, DotnetIcon } from "@/components/icons";
 import React, { useState } from "react";
 import TradingGif from "@/assets/trading.gif";
 import BankingGif from "@/assets/banking.gif";
@@ -36,24 +36,22 @@ export default function Home() {
 
   const skills = [
     {
-      name: 'Javascript',
       icon: <JavascriptIcon size={40} />
     },
     {
-      name: 'Python',
       icon: <PythonIcon size={40} />
     },
     {
-      name: 'Golang',
-      icon: <GolangIcon size={40} />
+      icon: <JavaIcon size={42} />
     },
     {
-      name: 'Dart',
-      icon: <DartIcon size={40} />
+      icon: <PhpIcon size={50} />
     },
     {
-      name: 'Wordpress',
-      icon: <WordpressIcon size={40} />
+      icon: <DotnetIcon size={45} />
+    },
+    {
+      icon: <WordpressIcon size={35} />
     },
   ]
 
@@ -123,12 +121,11 @@ export default function Home() {
       </section>
       <section  className="flex flex-col items-center gap-16 justify-start">
         <span  className="max-w-xs md:max-w-5xl text-base text-center">Solving problem with various technologies for all needs.</span>
-        <div className="w-full max-w-xs md:max-w-5xl grid grid-cols-2 md:grid-cols-5 gap-12">
+        <div className="w-full max-w-xs md:max-w-5xl grid grid-cols-2 md:grid-cols-6 gap-12">
           {
             skills.map((item) => (
               <div className="flex flex-row justify-start md:justify-center gap-5 md:gap-4 w-full items-center">
                 {item.icon}
-                <span>{item.name}</span>
               </div>
             ))
           }
