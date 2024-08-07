@@ -18,8 +18,8 @@ export const siteConfig = {
     },
   ],
   links: {
-    github: "https://github.com/talentafigan",
+    github: "https://github.com/FgDevLab",
     telegram: "https://t.me/talentafigan",
-    linkedin: "https://www.linkedin.com/in/talenta-figan-21364b180/",
+    linkedin: "https://www.linkedin.com/in/figan",
   },
 };
