@@ -296,7 +296,7 @@ export const DartIcon = ({
   <svg
     xmlns="http://www.w3.org/2000/svg"
     height={size || height}
-    viewBox="0 0 20 20"
+    viewBox="0 0 70 45"
     width={size || width}
     {...props}
   >

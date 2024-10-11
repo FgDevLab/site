@@ -5,9 +5,11 @@ import TradingGif from "@/assets/trading.gif";
 import BankingGif from "@/assets/banking.gif";
 import ArchiveGif from "@/assets/archive.gif";
 import HealthGif from "@/assets/health.gif";
+import ParticleGif from "@/assets/particle.gif";
 import Image from "next/image";
 import { Input, Textarea } from "@nextui-org/input";
 import HikImage from "@/assets/hik.png"
+import IndodaxImage from "@/assets/indodax.png"
 import IdxImage from "@/assets/idx.png"
 import MojokertoImage from "@/assets/mojokerto.png"
 import InattiImage from "@/assets/inatti.png"
@@ -42,13 +44,13 @@ export default function Home() {
       icon: <PythonIcon size={40} />
     },
     {
-      icon: <JavaIcon size={42} />
+      icon: <DartIcon size={50} />
     },
     {
       icon: <PhpIcon size={50} />
     },
     {
-      icon: <DotnetIcon size={45} />
+      icon: <GolangIcon size={45} />
     },
     {
       icon: <WordpressIcon size={35} />
@@ -149,6 +151,19 @@ export default function Home() {
       <section className="flex flex-col items-center md:gap-16 justify-start">
         <span className="max-w-xs md:max-w-5xl text-base text-center">WE WORK WITH VARIOUS INDUSTRY PLAYER OVER YEARS</span>
         <br className="flex md:hidden" />
+        <div className="border-b-3 md:border-3 border-[#CC76FF0F] bg-gradient-to-r from-[#0a090c] from-10% via-[#1d181e] via-50% to-[#0a090c] to-100% w-full items-center grid md:grid-cols-2 md:rounded-2xl md:h-[60vh] md:max-w-5xl">
+          <div className="flex w-full flex-col justify-center items-center">
+            <Image className="invert contrast-125 brightness-100 grayscale" src={ParticleGif} alt="Trading GIF" height={320} />
+          </div>
+          <div className="flex p-12 md:p-0 md:pr-14 flex-col justify-start items-start">
+            <h1 className="text-3xl font-medium">Indodax Exchange</h1>
+            <span className="px-3 font-medium py-1.5 rounded-xl text-sm border-2 mt-4 border-[#573254] bg-gradient-to-b from-[#1a181c] to-[#573254]">
+              Crypto
+            </span>
+            <Image className="grayscale mt-6" src={IndodaxImage} alt="Trading GIF" height={20} />
+            <span className="mt-8 text-gray-300 md:text-white text-sm md:text-base">Building Indodax Broker/Third-Party Crypto Exchange using microfrontend-based development approach.</span>
+          </div>
+        </div>
         <div className="border-b-3 md:border-3 border-[#CC76FF0F] bg-gradient-to-r from-[#0a090c] from-10% via-[#1d181e] via-50% to-[#0a090c] to-100% w-full items-center grid md:grid-cols-2 md:rounded-2xl md:h-[60vh] md:max-w-5xl">
           <div className="flex p-12 md:p-0 md:pl-14 flex-col justify-start items-start">
             <h1 className="text-3xl font-medium">IDX Portal</h1>
