@@ -153,15 +153,15 @@ export default function Home() {
         <br className="flex md:hidden" />
         <div className="border-b-3 md:border-3 border-[#CC76FF0F] bg-gradient-to-r from-[#0a090c] from-10% via-[#1d181e] via-50% to-[#0a090c] to-100% w-full items-center grid md:grid-cols-2 md:rounded-2xl md:h-[60vh] md:max-w-5xl">
           <div className="flex w-full flex-col justify-center items-center">
-            <Image className="invert contrast-125 brightness-100 grayscale" src={ParticleGif} alt="Trading GIF" height={320} />
+            <Image className="invert contrast-125 brightness-100 grayscale" src={TradingGif} alt="Trading GIF" height={320} />
           </div>
           <div className="flex p-12 md:p-0 md:pr-14 flex-col justify-start items-start">
-            <h1 className="text-3xl font-medium">Indodax Exchange</h1>
+            <h1 className="text-3xl font-medium">Indodax</h1>
             <span className="px-3 font-medium py-1.5 rounded-xl text-sm border-2 mt-4 border-[#573254] bg-gradient-to-b from-[#1a181c] to-[#573254]">
               Crypto
             </span>
             <Image className="grayscale mt-6" src={IndodaxImage} alt="Trading GIF" height={20} />
-            <span className="mt-8 text-gray-300 md:text-white text-sm md:text-base">Building Indodax Broker/Third-Party Crypto Exchange Platform.</span>
+            <span className="mt-8 text-gray-300 md:text-white text-sm md:text-base">Building Broker/Third-Party Cryptocurrency Trading Platform For Indodax Indonesia.</span>
           </div>
         </div>
         <div className="border-b-3 md:border-3 border-[#CC76FF0F] bg-gradient-to-r from-[#0a090c] from-10% via-[#1d181e] via-50% to-[#0a090c] to-100% w-full items-center grid md:grid-cols-2 md:rounded-2xl md:h-[60vh] md:max-w-5xl">
@@ -174,7 +174,7 @@ export default function Home() {
             <span className="mt-8 text-gray-300 md:text-white text-sm md:text-base">Renewal And Improvement Of Indonesian Stock Exchange Internal Core Administration Portal for securities firm and listed companies.</span>
           </div>
           <div className="flex w-full flex-col justify-center items-center">
-            <Image className="invert contrast-125 brightness-100 grayscale" src={TradingGif} alt="Trading GIF" height={320} />
+            <Image className="invert contrast-125 brightness-100 grayscale" src={ArchiveGif} alt="Trading GIF" height={320} />
           </div>
         </div>
         <div className="border-b-3 md:border-3 border-[#CC76FF0F] bg-gradient-to-r from-[#0a090c] from-10% via-[#1d181e] via-50% to-[#0a090c] to-100% w-full items-center grid md:grid-cols-2 md:rounded-2xl md:h-[60vh] md:max-w-5xl">
