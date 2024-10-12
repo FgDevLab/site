@@ -218,8 +218,8 @@ export default function Home() {
         </div>
       </section>
       <br />
-      <br id="contact" />
       <br />
+      <br id="contact" />
       <section className="w-full flex">
         <div className="absolute z-0 w-full sm:h-[100vh] blur-2xl bg-gradient-to-br from-[#000000] from-50% via-[#1a0325] via-80% to-[#0a0337] to-100%">
         </div>
