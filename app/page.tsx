@@ -161,7 +161,7 @@ export default function Home() {
               Crypto
             </span>
             <Image className="grayscale mt-6" src={IndodaxImage} alt="Trading GIF" height={20} />
-            <span className="mt-8 text-gray-300 md:text-white text-sm md:text-base">Building Indodax Broker/Third-Party Crypto Exchange using microfrontend-based development approach.</span>
+            <span className="mt-8 text-gray-300 md:text-white text-sm md:text-base">Building Indodax Broker/Third-Party Crypto Exchange Product.</span>
           </div>
         </div>
         <div className="border-b-3 md:border-3 border-[#CC76FF0F] bg-gradient-to-r from-[#0a090c] from-10% via-[#1d181e] via-50% to-[#0a090c] to-100% w-full items-center grid md:grid-cols-2 md:rounded-2xl md:h-[60vh] md:max-w-5xl">
