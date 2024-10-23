@@ -15,6 +15,7 @@ import MojokertoImage from "@/assets/mojokerto.png"
 import InattiImage from "@/assets/inatti.png"
 import { CircularProgress } from "@nextui-org/progress";
 import axios from "axios"
+import { Analytics } from "@vercel/analytics/react"
 
 export default function Home() {
 
@@ -103,6 +104,7 @@ export default function Home() {
 
   return (
     <React.Fragment>
+      <Analytics />
       <section className="w-full flex">
         <div className="absolute z-0 w-full h-[78vh] blur-2xl bg-gradient-to-tr from-[#000000] from-50% via-[#1a0325] via-80% to-[#0a0337] to-100%">
         </div>
